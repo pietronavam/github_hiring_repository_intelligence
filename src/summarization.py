@@ -52,7 +52,7 @@ def build_llm_summary(row: pd.Series) -> str:
     return (
         f"Repository: {row['full_name']}\n"
         f"Language: {row.get('language', 'unknown')}\n"
-        f"Description: {row.get('description', 'none')}\n"
+        f"Description: {str(row.get('description', '') or 'none')}\n"
         f"Age: {age}, {activity}\n"
         f"Stars: {int(row['stars'])}, Forks: {int(row['forks'])}, Open issues: {int(row['open_issues'])}\n"
         f"Contributors: {contrib_str}\n"
@@ -100,7 +100,7 @@ def build_bert_input(row: pd.Series) -> str:
         f"score:{int(row['engineering_score'])} "
         f"age:{int(row['repo_age_years'])}y "
         f"commits30d:{int(row['commits_30d'])} "
-        f"{row.get('description', '')[:120]}"
+        f"{str(row.get('description', '') or '')[:120]}"
     )
 
 
