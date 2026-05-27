@@ -95,7 +95,7 @@ def prepare_splits(df: pd.DataFrame) -> tuple:
         texts, labels, test_size=0.30, stratify=labels, random_state=42
     )
     X_val, X_test, y_val, y_test = train_test_split(
-        X_temp, y_temp, test_size=0.50, stratify=y_temp, random_state=42
+        X_temp, y_temp, test_size=0.50, random_state=42
     )
 
     SPLITS_DIR.mkdir(parents=True, exist_ok=True)
