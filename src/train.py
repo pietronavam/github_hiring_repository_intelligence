@@ -139,7 +139,7 @@ def train(input_path: Path = LABELED_PATH) -> None:
         logging_dir=str(MODEL_DIR / "logs"),
         logging_steps=10,
         report_to="none",
-        no_cuda=False,
+        use_cpu=not torch.cuda.is_available(),
     )
 
     trainer = Trainer(
