@@ -5,3 +5,5 @@ models/trained_models/*.pt
 models/trained_models/*.bin
 data/raw/*
 !data/raw/.gitkeep
+models/trained_models/distilbert_hiring/checkpoint-*/
+models/trained_models/distilbert_hiring/model.safetensors
