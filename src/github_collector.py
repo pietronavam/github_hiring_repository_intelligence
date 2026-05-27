@@ -72,16 +72,23 @@ def get_contributor_count(owner: str, repo: str) -> int:
 
 
 def get_recent_commits(owner: str, repo: str, days: int = 30) -> int:
-    since = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    # Use stats/commit_activity endpoint (less API calls)
-    url = f"{GITHUB_API_BASE}/repos/{owner}/{repo}/stats/commit_activity"
-    r = requests.get(url, headers=get_github_headers())
+    since = (datetime.now(timezone.utc).replace(microsecond=0)
+             - __import__("datetime").timedelta(days=days)).strftime("%Y-%m-%dT%H:%M:%SZ")
+    url = f"{GITHUB_API_BASE}/repos/{owner}/{repo}/commits"
+    r = requests.get(url, headers=get_github_headers(),
+                     params={"since": since, "per_page": 1}, timeout=10)
     handle_rate_limit(r)
-    if r.status_code != 200 or not r.json():
+    if r.status_code != 200:
         return 0
-    # Last ~4 weeks
-    weeks = r.json()[-4:] if len(r.json()) >= 4 else r.json()
-    return sum(w.get("total", 0) for w in weeks)
+    link = r.headers.get("Link", "")
+    if 'rel="last"' in link:
+        try:
+            last_url = [p.strip().split(";")[0].strip("<>") for p in link.split(",") if 'rel="last"' in p][0]
+            return int(last_url.split("page=")[-1])
+        except Exception:
+            pass
+    data = r.json()
+    return len(data) if isinstance(data, list) else 0
 
 
 def has_ci_workflows(owner: str, repo: str) -> bool:
@@ -101,9 +108,9 @@ def get_readme_length(owner: str, repo: str) -> int:
 
 
 def has_test_directory(owner: str, repo: str) -> bool:
-    for name in ["test", "tests", "spec", "__tests__"]:
+    for name in ["tests", "test"]:
         url = f"{GITHUB_API_BASE}/repos/{owner}/{repo}/contents/{name}"
-        r = requests.get(url, headers=get_github_headers())
+        r = requests.get(url, headers=get_github_headers(), timeout=8)
         handle_rate_limit(r)
         if r.status_code == 200:
             return True
@@ -142,11 +149,12 @@ def extract_signals(item: dict) -> dict | None:
         log.info(f"Extracting signals for {full_name}")
 
         contributors = get_contributor_count(owner, repo)
-        commits_30d = get_recent_commits(owner, repo)
         has_ci = has_ci_workflows(owner, repo)
         readme_len = get_readme_length(owner, repo)
-        has_tests = has_test_directory(owner, repo)
         releases = get_release_count(owner, repo)
+        # Only fetch commit count for repos showing recent activity (saves ~30% API calls)
+        commits_30d = get_recent_commits(owner, repo) if days_since_push < 90 else 0
+        has_tests = has_test_directory(owner, repo) if item.get("size", 0) > 20 else False
 
         return {
             "full_name": full_name,
