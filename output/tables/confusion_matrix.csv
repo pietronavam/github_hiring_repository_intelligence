@@ -1,7 +1,7 @@
 ,intern,junior,lead,low_value,senior,template
-intern,15,0,0,0,0,0
-junior,3,4,0,0,6,0
-lead,0,0,0,0,7,0
-low_value,2,0,0,0,0,0
-senior,0,1,0,0,12,0
-template,3,0,0,0,0,0
+intern,0,0,0,4,0,0
+junior,0,7,0,4,2,0
+lead,0,0,0,0,8,0
+low_value,0,2,0,9,0,0
+senior,0,1,0,0,14,0
+template,0,1,0,0,1,0

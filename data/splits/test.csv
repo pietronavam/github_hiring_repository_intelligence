@@ -1,54 +1,54 @@
 text,label
-lang:unknown ci-no tests-no license-no releases-no active solo no-stars no-readme score:0 age:0y commits30d:0 nan,0
-lang:typescript ci-no tests-no license-no releases-no active solo no-stars long-readme score:1 age:0y commits30d:0 nan,0
-lang:unknown ci-no tests-no license-no releases-no active solo mid-stars no-readme score:0 age:2y commits30d:0 nan,0
-"lang:ruby ci-yes tests-no license-yes releases-yes active large-team high-stars long-readme score:9 age:10y commits30d:0 Integration of React + Webpack + Rails including server-side rendering of React, enabling a better developer experience ",2
+"lang:javascript ci-yes tests-yes license-yes releases-yes active large-team mid-stars long-readme score:11 age:3y commits30d:0 Reusable, opinionated, zero-conf workflows for GitHub actions",2
+lang:unknown ci-no tests-no license-no releases-no active small-team low-stars long-readme score:3 age:0y commits30d:0 ✨ Discover top coding tools and plugins that boost productivity and enhance your development experience through artifici,1
+lang:c++ ci-no tests-no license-yes releases-no active large-team mid-stars long-readme score:4 age:10y commits30d:0 Manages the power consumption settings of a Plasma shell,4
+lang:typescript ci-yes tests-no license-yes releases-yes active large-team mid-stars long-readme score:9 age:6y commits30d:0 Repository for getting started with self-hosted Pulumi Service.,4
+"lang:unknown ci-no tests-no license-no releases-no active solo high-stars long-readme score:1 age:0y commits30d:0 A simple and always-updated list of free, working V2Ray servers. including SS, SSR, Trojan, VLESS, VMess, TUIC, and Hyst",3
+lang:vue ci-no tests-no license-yes releases-yes active solo mid-stars long-readme score:4 age:0y commits30d:0 易格音乐 (E-cells-music) ,1
 lang:python ci-no tests-no license-no releases-no active solo no-stars long-readme score:1 age:0y commits30d:0 nan,0
-lang:html ci-no tests-no license-no releases-no active solo no-stars no-readme score:0 age:0y commits30d:0 nan,0
-"lang:unknown ci-no tests-no license-no releases-no active solo high-stars long-readme score:1 age:1y commits30d:60 🚀 免费节点,🚀免费节点订阅,🚀v2ray免费节点,ssr免费节点订阅,clash免费节点订阅,免费梯子,免费翻墙,免费科学上网,免费ss/v2ray/trojan节点,谷歌商店,翻墙梯子,ChatGPT,Shadowrocket,Quan",5
-lang:typescript ci-yes tests-yes license-yes releases-no active solo low-stars long-readme score:7 age:0y commits30d:0 Multi-Agent GUI Orchestrator — eliminates manual handoffs between AI coding agents,1
-lang:c++ ci-no tests-no license-yes releases-yes active small-team mid-stars long-readme score:6 age:0y commits30d:0 A fast full-system simulator of Tenstorrent hardware,1
-lang:unknown ci-no tests-no license-no releases-no active solo no-stars no-readme score:0 age:0y commits30d:0 swift sdk for buble,3
-lang:c# ci-no tests-no license-no releases-no active solo mid-stars long-readme score:0 age:6y commits30d:0 Monogame implementation of Commandos 1 game series,0
-lang:unknown ci-no tests-no license-no releases-no active solo high-stars long-readme score:1 age:2y commits30d:3956   proxy list that updates every 10 minutes,5
-lang:unknown ci-no tests-no license-no releases-no active solo mid-stars long-readme score:1 age:1y commits30d:0 Collection of 2026 internships in Data-Analysis!,0
-lang:emacs lisp ci-yes tests-no license-yes releases-no active small-team mid-stars long-readme score:7 age:4y commits30d:260 Packaging for Eask CLI,1
-lang:typescript ci-yes tests-yes license-yes releases-yes active large-team high-stars long-readme score:11 age:10y commits30d:464 :globe_with_meridians: :electric_plug: The MetaMask browser extension enables browsing Ethereum blockchain enabled websi,2
-lang:unknown ci-no tests-no license-no releases-no active solo high-stars long-readme score:1 age:2y commits30d:0 free clash sub. Update at anytime. 不要fork !!! 不要fork !!! 不要fork !!!,5
-"lang:go ci-no tests-no license-yes releases-no active small-team low-stars long-readme score:4 age:5y commits30d:0 🌧️ Monitor your system in real-time with Gophetch, featuring animated ASCII art and customizable display options for a u",1
-lang:typescript ci-yes tests-yes license-yes releases-yes active small-team mid-stars long-readme score:11 age:0y commits30d:0 Introduces a comprehensive agent-based framework for guided software development (GSD),4
-lang:php ci-no tests-no license-no releases-no active solo low-stars long-readme score:1 age:8y commits30d:0 Management tools modules for Drupal 11 designed to handle various back office tasks and company digitization.,0
-"lang:shell ci-no tests-no license-yes releases-no active solo mid-stars long-readme score:2 age:0y commits30d:0 Este repositório reúne stacks tecnológicas, guias técnicos, laboratórios, blocklists e scripts de automação alinhados a ",0
-lang:css ci-yes tests-no license-yes releases-no active small-team no-stars no-readme score:6 age:5y commits30d:0 nan,1
-lang:python ci-yes tests-yes license-yes releases-no active small-team no-stars long-readme score:9 age:0y commits30d:0 构建全局鹰眼监测系统,1
-lang:typescript ci-yes tests-no license-yes releases-yes active mid-team high-stars long-readme score:9 age:4y commits30d:0 In-browser Streamlit 🎈🚀,2
-"lang:unknown ci-yes tests-no license-yes releases-no active solo high-stars long-readme score:5 age:0y commits30d:5666 🗽Бесплатные и проверенные VPN конфигурации, работающие в РФ ⚪ Белые списки / обход белых списков ⚪ Free and checked VPN ",1
-lang:python ci-yes tests-no license-no releases-no active solo low-stars long-readme score:4 age:3y commits30d:1 Tracking Metrobus location data,1
-lang:unknown ci-no tests-no license-no releases-no active small-team no-stars no-readme score:2 age:0y commits30d:0 nan,3
-"lang:typescript ci-yes tests-no license-no releases-no active mid-team low-stars long-readme score:6 age:8y commits30d:0 coilysiren.me — personal site and technical writing on platform engineering, systems, and side projects",4
-lang:typescript ci-yes tests-no license-yes releases-yes active small-team mid-stars long-readme score:9 age:0y commits30d:0 Create clips from media on your personal media server,4
-lang:python ci-yes tests-no license-yes releases-no active small-team mid-stars long-readme score:7 age:3y commits30d:0 nodefree,1
-lang:jupyter notebook ci-yes tests-no license-yes releases-no active small-team no-stars long-readme score:6 age:0y commits30d:11654 nan,1
-lang:shell ci-yes tests-no license-yes releases-yes active mid-team mid-stars no-readme score:8 age:1y commits30d:0 nan,4
-lang:unknown ci-yes tests-no license-no releases-no active small-team low-stars long-readme score:5 age:1y commits30d:0 nan,1
-lang:glsl ci-no tests-no license-yes releases-no active solo mid-stars long-readme score:1 age:1y commits30d:0 Free and open sourced version of Sundial,0
-lang:javascript ci-yes tests-yes license-yes releases-yes active large-team high-stars long-readme score:11 age:9y commits30d:260 The React Framework,2
-"lang:rust ci-yes tests-yes license-yes releases-yes active large-team high-stars long-readme score:11 age:5y commits30d:0 Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next generation of AI. Also av",2
-lang:unknown ci-no tests-no license-no releases-no active solo mid-stars short-readme score:0 age:0y commits30d:1688 Iran proxy configurations,0
-"lang:python ci-yes tests-no license-yes releases-no active small-team mid-stars long-readme score:6 age:0y commits30d:0 Opinionated Niri bootc image, built on top of Freedesktop-SDK",4
-"lang:python ci-no tests-no license-no releases-no active small-team low-stars long-readme score:3 age:0y commits30d:0 🚀 Generate high-volume HTTP requests with Kaneki-DDoS, a user-friendly tool for network load testing featuring multiple ",1
-"lang:c++ ci-yes tests-no license-yes releases-yes active large-team high-stars long-readme score:9 age:1y commits30d:0 Mooncake is the serving platform for Kimi, a leading LLM service provided by Moonshot AI.",2
-lang:rust ci-yes tests-no license-yes releases-yes active large-team high-stars long-readme score:9 age:0y commits30d:0 A single-node analytical database engine with geospatial as a first-class citizen,4
-lang:python ci-no tests-no license-no releases-no active solo no-stars no-readme score:0 age:0y commits30d:0 bot response,0
-lang:ruby ci-yes tests-yes license-yes releases-yes active mid-team mid-stars long-readme score:11 age:7y commits30d:0 🕸 Turn almost any website into an RSS feed and serve it instantly. Automatic scraping. Start fast with Docker.,4
-lang:php ci-yes tests-yes license-yes releases-yes active mid-team high-stars long-readme score:10 age:10y commits30d:0 Traverses array structures and object graphs to enumerate all referenced objects,4
-lang:c ci-no tests-yes license-yes releases-yes active large-team high-stars long-readme score:8 age:9y commits30d:31 TizenRT is a lightweight RTOS-based platform to support low-end IoT devices,4
-lang:typescript ci-yes tests-no license-yes releases-yes active solo low-stars long-readme score:7 age:13y commits30d:0 React components for interactive image previews — flip through images by mouse position or animate frames on hover like ,4
 lang:unknown ci-no tests-no license-no releases-no active solo mid-stars no-readme score:0 age:2y commits30d:13024 Share some free https proxies from internet,0
-lang:javascript ci-no tests-no license-yes releases-no active solo no-stars long-readme score:2 age:0y commits30d:0 Vibe-coded project to compile House of Representatives floor proceedings and vote tallies.,0
-lang:ruby ci-yes tests-no license-yes releases-yes active large-team high-stars long-readme score:9 age:10y commits30d:495 🍺 The missing package manager for macOS (or Linux),2
-lang:javascript ci-no tests-no license-no releases-no active solo no-stars no-readme score:0 age:0y commits30d:0 nan,0
-lang:java ci-yes tests-no license-yes releases-no active large-team high-stars long-readme score:7 age:7y commits30d:0 Repository for the Ars Nouveau minecraft mod. https://www.curseforge.com/minecraft/mc-mods/ars-nouveau,4
+lang:javascript ci-yes tests-no license-no releases-no active solo no-stars long-readme score:4 age:0y commits30d:0 Static CMS prototype for KGIB Cashout operational transfer review,1
+"lang:c ci-yes tests-no license-yes releases-no active mid-team mid-stars long-readme score:7 age:2y commits30d:0 The Seeed Studio XIAO Series is a collection of thumb-sized, powerful microcontroller units (MCUs) tailor-made for space",4
+lang:c# ci-yes tests-no license-yes releases-yes active large-team mid-stars long-readme score:9 age:3y commits30d:283 A tool for installing Pathfinder: Wrath of the Righteous mods and their dependencies.,4
+lang:unknown ci-no tests-no license-no releases-no active small-team mid-stars long-readme score:3 age:1y commits30d:0 Collection of 2026 internships in Product Management!,3
+lang:c++ ci-no tests-no license-yes releases-yes active small-team mid-stars long-readme score:6 age:0y commits30d:0 A fast full-system simulator of Tenstorrent hardware,4
+lang:unknown ci-no tests-no license-no releases-no active solo mid-stars long-readme score:0 age:5y commits30d:0 List of Hourly Updated Fresh DNS resolvers,3
+lang:go ci-yes tests-no license-yes releases-yes active small-team mid-stars long-readme score:9 age:0y commits30d:0 ghir is a CLI making past GitHub Releases immutable,4
+lang:c++ ci-no tests-no license-no releases-no active large-team high-stars long-readme score:2 age:10y commits30d:49 Various components needed to run a Plasma-based environment,4
+lang:python ci-no tests-no license-yes releases-no active small-team high-stars long-readme score:4 age:0y commits30d:0 Supports comfyui/API calls/modelscope calls,1
+"lang:typescript ci-yes tests-no license-yes releases-yes active large-team high-stars long-readme score:9 age:0y commits30d:0 The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound",2
+lang:go ci-yes tests-no license-yes releases-yes active small-team low-stars long-readme score:9 age:6y commits30d:0 Go library to check if two values are equal as data format such as JSON,4
+lang:tcl ci-no tests-no license-no releases-no active small-team high-stars long-readme score:2 age:11y commits30d:0 Registry index for crates.io,3
+"lang:javascript ci-yes tests-yes license-yes releases-yes active large-team high-stars long-readme score:11 age:4y commits30d:0 使用 NextJS + Notion API 实现的，支持多种部署方案的静态博客，无需服务器、零门槛搭建网站，为Notion和所有创作者设计。 (A static blog built with NextJS and Notion API,",2
 lang:powershell ci-yes tests-no license-no releases-no active solo mid-stars long-readme score:4 age:1y commits30d:378 nan,1
-lang:c++ ci-yes tests-no license-yes releases-no active large-team high-stars long-readme score:7 age:9y commits30d:0 Rhino and Grasshopper developer sample code,4
-lang:rust ci-yes tests-yes license-no releases-yes active solo low-stars long-readme score:8 age:0y commits30d:0 nan,4
+lang:css ci-yes tests-no license-yes releases-no active small-team no-stars no-readme score:6 age:5y commits30d:0 nan,1
+"lang:unknown ci-yes tests-no license-yes releases-no active solo high-stars long-readme score:5 age:0y commits30d:5666 🗽Бесплатные и проверенные VPN конфигурации, работающие в РФ ⚪ Белые списки / обход белых списков ⚪ Free and checked VPN ",5
+lang:javascript ci-yes tests-yes license-yes releases-yes active large-team high-stars long-readme score:11 age:10y commits30d:106 Setup and manage header bidding advertising partners without writing code or confusing line items. Prebid.js is open sou,2
+lang:unknown ci-no tests-no license-no releases-no active solo low-stars long-readme score:1 age:3y commits30d:0 nan,0
+"lang:html ci-no tests-no license-no releases-no active small-team low-stars long-readme score:3 age:0y commits30d:0 🌐 Learn HTML basics through practical examples and projects from a CodeWithHarry student, perfect for aspiring web devel",1
+lang:unknown ci-no tests-no license-no releases-no active solo no-stars no-readme score:0 age:0y commits30d:0 swift sdk for buble,3
+lang:python ci-no tests-yes license-yes releases-no active solo no-stars long-readme score:4 age:0y commits30d:0 Deterministic multi-agent pair programming over tmux,1
+lang:unknown ci-no tests-no license-no releases-no active solo no-stars no-readme score:0 age:0y commits30d:0 nan,3
+lang:c ci-no tests-yes license-yes releases-yes active large-team high-stars long-readme score:8 age:9y commits30d:31 TizenRT is a lightweight RTOS-based platform to support low-end IoT devices,2
+lang:go ci-yes tests-no license-yes releases-no active small-team high-stars long-readme score:6 age:3y commits30d:568 威胁情报-漏洞存储库,4
+"lang:unknown ci-no tests-no license-no releases-no active solo high-stars short-readme score:0 age:5y commits30d:3875 List of Free HTTPS, SOCKS4, SOCKS5 & V2Ray Proxy (Hourly Updates!)",3
+lang:swift ci-no tests-no license-yes releases-yes active solo mid-stars long-readme score:4 age:0y commits30d:0 Convert a device into a Home accessory.,1
+lang:dart ci-yes tests-yes license-yes releases-yes active solo low-stars long-readme score:9 age:0y commits30d:0 简约高效的课程表应用  Minimalist Class Schedule App,4
+lang:shell ci-yes tests-no license-yes releases-yes active mid-team mid-stars no-readme score:8 age:1y commits30d:0 nan,4
+lang:unknown ci-yes tests-no license-no releases-no active small-team low-stars long-readme score:6 age:1y commits30d:0 GitHub主页,1
+"lang:unknown ci-no tests-no license-yes releases-no active solo low-stars long-readme score:2 age:0y commits30d:0 🚫 Stop AI slop in Chinese writing. 干掉中文 AI 味 — banned words, punctuation rules, structure constraints & 4-layer QA. Work",1
+"lang:unknown ci-no tests-no license-yes releases-no active solo low-stars long-readme score:1 age:0y commits30d:41113 InDMShopBot: The best Telegram eCommerce MiniApp and  Bot For Sellers, The Shop MiniAp and Bot Builder is a Classic and ",0
+lang:html ci-no tests-no license-no releases-no active solo no-stars no-readme score:0 age:0y commits30d:0 nan,3
+lang:typescript ci-yes tests-yes license-yes releases-yes active large-team high-stars long-readme score:11 age:10y commits30d:0 Conference website template,5
+lang:assembly ci-yes tests-no license-yes releases-no active small-team mid-stars long-readme score:7 age:1y commits30d:0 Reconstructed source code for the Microprose game F-15 Strike Eagle 2 for MS-DOS,4
+"lang:typescript ci-yes tests-no license-no releases-yes active large-team high-stars long-readme score:8 age:12y commits30d:0 The monorepo home to all of the FormatJS related libraries, most notably react-intl.",2
+lang:css ci-no tests-no license-yes releases-no active small-team no-stars long-readme score:4 age:2y commits30d:0 Homepage of Ziqing Wang,1
+"lang:typescript ci-yes tests-yes license-yes releases-no active large-team high-stars long-readme score:9 age:9y commits30d:0 Boost LaTeX typesetting efficiency with preview, compile, autocomplete, colorize, and more.",2
+lang:typescript ci-yes tests-no license-yes releases-yes active small-team low-stars long-readme score:9 age:0y commits30d:0 AI coding assistant for Windows powered by OpenRouter,4
+lang:dart ci-yes tests-no license-yes releases-yes active small-team mid-stars long-readme score:9 age:2y commits30d:0 eQuran offers an enriching way to connect with the Holy Quran.,4
+lang:python ci-yes tests-yes license-yes releases-yes active large-team high-stars long-readme score:11 age:3y commits30d:0 🕸️ Web apps in pure Python 🐍,2
+lang:kotlin ci-yes tests-no license-yes releases-yes active mid-team high-stars long-readme score:9 age:3y commits30d:0 A simple tool for building stories.,4
+"lang:unknown ci-no tests-no license-yes releases-no active solo high-stars long-readme score:2 age:1y commits30d:0 Free Proxy List ✅​🚀 HTTP, HTTPS, SOCKS4 & SOCKS5 | Updated every 5 minutes | Strict SSL, zero MITM, multi-country",3
+lang:python ci-no tests-no license-no releases-no active solo mid-stars long-readme score:0 age:4y commits30d:0 nan,3
+"lang:unknown ci-no tests-no license-no releases-no active solo mid-stars long-readme score:0 age:1y commits30d:8373 UPLOADING V2RAY CONFIGURATIONS NONSTOP, 24/7.",3
+"lang:python ci-no tests-yes license-no releases-no active solo no-stars long-readme score:3 age:0y commits30d:0 Production-oriented financial data pipeline: idempotent ingestion, SCD2 security master, split-adjusted pricing (BigQuer",1
