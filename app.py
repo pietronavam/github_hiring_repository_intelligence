@@ -227,6 +227,89 @@ long README, score=11/11...
 - **Rate limits**: ~350 repos is small; larger samples would improve generalization
         """)
 
+    # ── Analytical Questions (Track A) ──────────────────────────────
+    st.divider()
+    st.header("Analytical Questions — Track A")
+
+    with st.expander("Q1 — Which signals are most associated with each maturity level?", expanded=True):
+        st.markdown("""
+**Intern-level** repositories tend to have: 0–1 contributors, no CI/CD, no tests, no releases,
+short or missing README, low commit frequency, and a low engineering_score (0–2/11).
+The signal pattern is one person working sporadically on a simple script.
+
+**Junior-level** repositories show: single contributor with regular commits, minimal CI/CD,
+occasional tests, some documentation. Engineering score typically 2–5/11.
+Projects are functional but lack the discipline of professional workflows.
+
+**Senior-level** repositories consistently show: CI/CD present, tests directory, multiple releases,
+long README, regular commits, license file. Engineering score 6–9/11.
+The repository reflects reproducible, maintainable engineering practice.
+
+**Lead-level** repositories add: multiple contributors (5+), high commit frequency,
+many releases with versioning, rich topic tags, community engagement (issues/PRs).
+Engineering score 9–11/11. The repository behaves like a maintained product, not a project.
+
+**Key insight**: `has_ci`, `has_tests`, and `contributors > 1` are the three signals with the
+strongest discriminative power across maturity levels. Stars and forks alone are poor predictors.
+        """)
+
+    with st.expander("Q2 — How to differentiate low-value / template repos from complex ones?", expanded=True):
+        st.markdown("""
+**Low-value repositories** are characterized by: 0 commits in the last 30 days,
+no contributors beyond the owner, no CI/CD, no tests, minimal README (< 200 chars),
+0 releases, and very low repo size. They exist but show no sign of active intent.
+
+**Template repositories** are identified by: the GitHub `is_template` flag,
+very low unique commit count, generic boilerplate file structure, and descriptions
+that contain words like "starter", "template", "boilerplate". Their engineering_score
+may appear moderate because templates often include CI/CD scaffolding — but there is
+no original engineering work behind the structure.
+
+**The key differentiator from complex repos:**
+- Low-value: *absence* of activity signals (no CI, no tests, no commits, no releases)
+- Template: *presence* of scaffolding without original work (CI exists but was never modified)
+- Complex: *combination* of multiple active signals (CI + tests + multiple contributors + releases)
+
+In practice, filtering `days_since_push > 365 AND commits_30d == 0 AND releases == 0`
+captures most low-value repos. Template detection requires checking the GitHub metadata flag directly.
+        """)
+
+    with st.expander("Q3 — Why is this system useful for hiring? Business value and ethical considerations.", expanded=True):
+        st.markdown("""
+**Business value:**
+
+- **Recruiters** spend 2–5 minutes per repository reviewing candidate portfolios.
+  A system that pre-scores 50 repos in seconds allows human review to focus on
+  the top candidates rather than filtering out obviously low-signal work.
+
+- **Startups and accelerators** evaluating technical co-founders or early hires
+  can use repository signals as a complement to résumés and interviews.
+
+- **Engineering managers** reviewing team members' public work or evaluating
+  external contributors can use the maturity signal as a conversation starter.
+
+- **Technical interview pipelines** can use this as a pre-screening layer before
+  expensive live coding sessions, reducing interviewer time on clearly unsuitable candidates.
+
+**Limitations in practice:**
+
+- A strong engineer may have weak public repos due to NDA constraints, fully private work,
+  or personal choice not to maintain a public portfolio.
+- The system classifies *repositories*, not *developers*. The same developer may have
+  intern-level public repos and senior-level private ones.
+- Results are probabilistic. The model's accuracy is 56.6% — it is a signal, not a verdict.
+
+**Ethical considerations:**
+
+- This system must **never be the sole criterion** in a hiring decision.
+- It should be disclosed to candidates if used in screening.
+- The model encodes biases from LLM labels: repos with English documentation may be
+  systematically scored higher than equivalent repos documented in other languages.
+- Demographic biases in the GitHub ecosystem (who has time to maintain public repos)
+  can propagate into hiring decisions if this system is used without awareness.
+- Recommended use: as one signal among many, with a human reviewing all flagged cases.
+        """)
+
 
 # ══════════════════════════════════════════════════════════════════
 # TAB 2 — Exploratory Analysis
@@ -292,20 +375,35 @@ with tab3:
         if "per_class" in metrics:
             st.dataframe(metrics["per_class"].style.format(precision=3), use_container_width=True)
 
-        st.subheader("Methodology Sensitivity Analysis")
+        st.subheader("Q4 — Methodological Sensitivity Analysis")
         st.markdown("""
-**Baseline approach**: bert_input uses compact signal tokens (`ci-yes tests-no solo no-stars`)
+**Baseline approach**: compact signal tokens fed to DistilBERT
+(`ci-yes tests-no solo no-stars age-2y score-3`)
 
-**Alternative approach**: bert_input uses the full verbose llm_summary (~300 words)
+**Alternative approach**: TF-IDF + Logistic Regression on the same compact tokens
+""")
+        if "comparison" in metrics:
+            st.dataframe(
+                metrics["comparison"].style.format({"accuracy": "{:.1%}", "f1_weighted": "{:.1%}"}),
+                use_container_width=True,
+            )
+        st.markdown("""
+**Actual finding**: TF-IDF + Logistic Regression (66.0% accuracy, 61.9% F1) outperforms
+DistilBERT (56.6% accuracy, 47.5% F1) on this dataset.
 
-Expected finding: compact tokens perform comparably to verbose summaries because
-BERT's tokenizer can learn from structured signal patterns. Verbose summaries add
-noise (repo names, descriptions) that may not generalize.
+**Why?** With only 350 weakly-labeled repos, BERT does not have enough data to learn
+contextual representations that surpass simple token frequency statistics.
+TF-IDF exploits the structured, repetitive patterns in the compact signal tokens
+(e.g., `ci-yes` always signals professionalism) more efficiently when training data is scarce.
+
+**What would change with more data?** With 1,000+ clean-labeled repos, BERT's contextual
+understanding of signal combinations would be expected to outperform TF-IDF.
+The weak-supervision pipeline is the correct architectural choice at production scale.
 
 **Category definition sensitivity**: collapsing `low_value` into `intern` would boost
-recall on the intern class but lose precision on the real intern class. The 6-class
-distinction is intentional — recruiters treat abandoned repos differently from
-genuine intern-level work.
+recall on the intern class but lose precision on genuine intern-level work.
+The 6-class distinction is intentional — recruiters treat abandoned repos differently
+from beginner-level work that shows intent and learning.
         """)
 
 
